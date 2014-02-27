@@ -1,0 +1,353 @@
+\documentclass[12pt]{etsu_thesis}
+\usepackage{amsmath,amssymb,amsfonts} % Typical maths resource packages
+\usepackage{color}                    % For creating coloured text and background
+\usepackage{colortbl}
+\usepackage{graphicx}
+%\usepackage[subscriptcorrection,slantedGreek,nofontinfo]{mtpro}
+%\input seteps
+%\input{prepictex}
+%\input{pictex}
+%\input{postpictex}
+
+%\input setbmp % THIS IS A PCTEX COMMAND FOR LOADING BITMAP IMAGES
+
+\setlength{\oddsidemargin}{.25in} \setlength{\topmargin}{0in}
+\setlength{\headheight}{.2in} \setlength{\headsep}{.2in}
+\setlength{\textwidth = 6.0in} \setlength{\textheight = 8.3in}
+\setlength{\footskip}{.3in}
+\setlength{\unitlength}{1mm}
+
+\renewcommand{\baselinestretch}{2}
+\renewcommand{\arraystretch}{.5}
+\newcommand{\qed}{$\Box$}
+\newtheorem{fact}{Theorem}[section]
+\newtheorem{claim}{Claim}
+\newtheorem{theorem}[fact]{Theorem}
+\newtheorem{thm}[fact]{Theorem}
+\newtheorem{alg}[fact]{Algorithm}
+\newtheorem{word}[fact]{Definition}
+\newtheorem{prop}[fact]{Proposition}
+\newtheorem{defn}[fact]{Definition}
+\newtheorem{ob}[fact]{Observation}
+\newtheorem{Corollary}[fact]{Corollary}
+\newtheorem{corollary}[fact]{Corollary}
+\newtheorem{cor}[fact]{Corollary}
+\newtheorem{lemma}[fact]{Lemma}
+\newtheorem{Guess}[fact]{Conjecture}
+\newtheorem{conj}[fact]{Conjecture}
+\newtheorem{proposition}[fact]{Proposition}
+\newtheorem{example}[fact]{Example}
+\def\theotheorem{A\arabic{otheorem}}
+
+
+
+\begin{document}
+\thispagestyle{empty}
+
+
+\begin{center}
+% INSERT YOUR THESIS TITLE IN THE NEXT LINE
+{Title of My Thesis \\
+[.04in]} \rm
+\rule{1.25in}{.005in}\\[.0 in]
+
+\vspace{.15in}
+
+A thesis \\ [.04in]
+presented to \\ [.04in]
+the faculty of the Department of Mathematics \\[.04in]
+East Tennessee State University \\ [.04in]
+
+\vspace{.15in}
+
+In partial fulfillment \\[.04in]of the requirements for the degree \\
+[.04in] Master of Science in Mathematical Sciences \\ [.04in]
+\rule{1.25in}{.005in}\\
+
+\vspace{.15in}
+
+by  \\ [.04in]
+{ Bob Gardner } \\[.04in]
+{May 2007} \\[.04in]
+\rule{1.25in}{.005in}\\
+
+\vspace{.15in}
+% Put committee members' names in the following lines.
+Bob Price, Ph.D., Chair \\[.04in]
+Anant Godbole, Ph.D. \\[.04in]
+Debra Knisley, Ph.D. \\[.04in]
+
+\vspace{.15in}
+
+Keywords: graph theory, algebra, complex analysis, statistics.
+
+
+\end{center}
+\newpage
+\pagestyle{plain}
+\begin{center}
+{ ABSTRACT}\\
+{ Title of My Thesis \\ } by \\
+[.1in]
+
+{ Bob Gardner}\\[.1in]
+
+\end{center}
+
+\noindent 
+Insert text of abstract here.
+
+\baselineskip=26 pt
+
+\addcontentsline{toc}{section}{\rm ABSTRACT}
+\newpage
+
+\begin{center}
+
+\ \ \
+
+\vspace{3.in}
+
+Copyright by
+% INSERT YOUR NAME BELOW AND THE APPROPRIATE YEAR
+Bob Gardner 2007
+
+\end{center}
+%\addcontentsline{toc}{section}{\rm COPYRIGHT}
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% THE FOLLOWING LINES GENERATE THE DEDICATION (OMIT IF YOU LIKE)
+%\begin{center}
+%{  DEDICATION } \\ [.15in]
+%\end{center}
+
+% INSERT YOUR DEDICATION BELOW
+%Text of Dedication.
+
+%\addcontentsline{toc}{section}{\rm DEDICATION}
+
+%\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% THE FOLLOWING LINES GENERATE THE ACKNOWLEDGMENTS (OMIT IF YOU LIKE)
+\begin{center}
+ ACKNOWLEDGMENTS \\ [.15in]
+\end{center}
+
+Insert text of acknowledgements here.
+
+
+\addcontentsline{toc}{section}{\rm ACKNOWLEDGMENTS}
+
+\newpage
+
+\tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% THE NEXT 3 LINES GENERATE A "LIST OF TABLES." IF YOU HAVE NO TABLES, OMIT THESE LINES.
+\newpage
+
+\listoftables
+
+\addcontentsline{toc}{section}{\rm LIST OF TABLES}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% THE NEXT 3 LINES GENERATE A "LIST OF FIGURES." IF YOU HAVE NO FIGURES, OMIT THESE LINES.
+\newpage
+
+\listoffigures
+
+\addcontentsline{toc}{section}{\rm LIST OF FIGURES}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{TITLE OF FIRST CHAPTER}
+Test of Chapter 1.
+
+\subsection{Subsection Title}
+Text of subsection.
+
+% EXAMPLE OF A THEOREM:
+\begin{theorem}
+{{\rm \cite{kirkwood}} A bounded function $f$ is Riemann integrable on $[a,b]$ if and only if the set of discontinuities of $f$ has measure $0$.}
+\end{theorem}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ************************** NEED TO MAKE SURE TABLE APPEARS IN APPROPRIATE PLACE *********
+% THE FOLLOWING INSERTS A TABLE, LABELS IT, AND INSERTS IT IN THE LIST OF TABLES.
+\begin{table}[h]
+\caption{\label{tabletitle1} Caption for the first table.}
+\begin{center}
+\begin{tabular}{|c|c|}\hline\hline
+Column 1 & Column 2 \\ \hline\hline
+1 & 2 \\ \hline
+3 & 4 \\ \hline\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+
+\newpage
+\clearpage
+\section{TITLE OF SECOND CHAPTER}
+
+Text of Chapter 2.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% THE FOLLOWING INSERTS A FIGURE WRITTEN IN LaTeX.  
+\begin{figure}[h]
+\begin{center}
+
+\begin{picture}(103,28)
+
+\put(20,6){\circle*{2}}
+\put(40,6){\circle*{2}}
+\put(30,26){\circle*{2}}
+
+\put(20,6){\vector(1,0){19}}
+\put(30,26){\vector(-1,-2){9.5}}
+\put(40,6){\vector(-1,2){9.5}}
+
+\put(16,5){$b$}
+\put(43,5){$c$}
+\put(26,25){$a$}
+\put(28,0){$d_m$}
+
+\put(60,6){\circle*{2}}
+\put(80,6){\circle*{2}}
+\put(70,26){\circle*{2}}
+
+\put(60,6){\vector(1,0){19}}
+\put(70,26){\vector(-1,-2){9.5}}
+\put(70,26){\vector(1,-2){9.5}}
+
+\put(56,5){$b$}
+\put(83,5){$c$}
+\put(66,25){$a$}
+\put(68,0){$d_t$}
+
+\end{picture}
+
+\caption{\label{figuretitle1}Caption for the first figure.}
+\end{center}
+\end{figure}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% THE FOLLOWING INSERTS A FIGURE.  THE FIGURE IS LISTED AS "FIG.BMP" AND WOULD
+% BE IMPORTED BY THE LINE WHICH IS COMMENTED OUT.
+%\begin{figure}
+% THE FOLLOWING LINE SKIPS 4.5 INCHES TO MAKE ROOM FOR THE FIGURE.
+%\vskip 4.5in
+%\begin{center}
+% THE FOLLOWING LINE INSERTS THE BMP FILE (IT IS COMMENTED OUT SO THAT ERRORS ARE NOT
+% GENERATED WHEN LaTeXING THIS FILE):
+%\special{bmp:fig.bmp x=6.5in y=4.5in}
+%\caption{\label{figuretitle2}Caption for the second figure.}
+%\end{center}
+%\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% THE FOLLOWING LINES GENERATE THE BIBLIOGRAPHY
+
+\clearpage \addcontentsline{toc}{section}{\rm BIBLIOGRAPHY}
+\vspace{.3in}
+%\thispagestyle{plain}
+
+%\begin{center}
+%BIBLIOGRAPHY
+%\end{center}
+
+\begin{thebibliography}{99}
+%\begin{thebiblio}{99}
+
+\bibitem{kirkwood} {\it An Introduction to Analysis}, 2nd edition, by J.\ R.\ Kirkwood, Published by PWS Publishing Company and Waveland Press, Inc. 1995. 
+
+
+\end{thebibliography}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% THE FOLLOWING LINES INSERT AN APPENDIX (OMIT IF YOU LIKE)
+%\newpage
+%\addcontentsline{toc}{section}{\rm APPENDICES} \vspace{3. in}
+%\thispagestyle{plain}
+
+%\begin{center}
+%APPENDICES
+%\end{center}
+
+%\appendix
+%\begin{appendix}
+
+% PUT THE TITLE OF THE FIRST APPENDIX IN THE NEXT LINE
+%\subsection{Appendix 1 Title}
+%\section{Appendix 1 Title}
+
+% INSERT THE FIRST APPENDIX BELOW.
+
+%Text of Appendix 1.
+
+%\newpage
+% PUT THE TITLE OF THE SECOND APPENDIX IN THE NEXT LINE
+%\subsection{Appendix 2 Title}
+%\section{Appendix 2 Title.}
+
+% INSERT THE SECOND APPENDIX BELOW.
+%Text of Appendix 2.
+
+
+%\end{appendix}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% THE FOLLOWING LINES CREATE THE VITA
+\newpage
+\addcontentsline{toc}{section}{\rm VITA}
+
+\newpage
+
+\ \ \ \ \
+
+\thispagestyle{plain}
+
+\vspace{-.4in}
+
+\begin{center}
+VITA\\ BOB GARDNER
+\end{center}
+
+\vspace{.4in}
+
+\noindent
+\begin{tabular}{ll}
+Education:               & B.S.\ Mathematics, Auburn University in Montgomery,\\
+\rule[0in]{0in}{.2in}    & \hspace{.25in} Montgomery, Alabama 1984\\
+\rule[0in]{0in}{.2in}    & M.S.\ Mathematics (Combinatorics), Auburn University\\
+\rule[0in]{0in}{.2in}    & \hspace{.25in} Auburn, Alabama 1987\\
+\rule[0in]{0in}{.2in}    & M.S.\ Zoology and Wildlife (Population Genetics), \\
+\rule[0in]{0in}{.2in}    & \hspace{.25in} Auburn University, Auburn, Alabama 1992\\
+\rule[0in]{0in}{.2in}    & Ph.D.\ Mathematics (Complex Analysis), Auburn University\\
+\rule[0in]{0in}{.2in}    & \hspace{.25in} Auburn, Alabama 1991\\
+
+\rule[0in]{0in}{.4in}
+Professional Experience: \hspace{.1in} & Assistant Professor, LSU in Shreveport,\\
+\rule[0in]{0in}{.2in}    & \hspace{.25in} Shreveport, Louisiana, 1991--1993\\
+\rule[0in]{0in}{.2in}    & Assistant, Associate, Full Professor, East Tennessee State \\
+\rule[0in]{0in}{.2in}    & \hspace{.25in} University, Johnson City, Tennessee, 1993--present\\
+
+\rule[0in]{0in}{.4in}
+Publications:            & R.\ Gardner and N.\ K.\ Govil, ``Some Inequalities for Entire\\
+\rule[0in]{0in}{.2in}    & \hspace{.25in}  Functions of Exponential Type,'' \\
+\rule[0in]{0in}{.2in}    & \hspace{.25in} {\it Proceedings of the American Mathematical Society},\\
+\rule[0in]{0in}{.2in}    & \hspace{.25in} {\bf 123}(9) (1995) 2757--2761.
+
+\end{tabular}
+
+
+\end{document}
